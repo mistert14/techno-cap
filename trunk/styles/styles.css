@@ -1,0 +1,90 @@
+.titre, .description, .capa1,.capa2,.capa3,.capa4,.capa5,.capa6, .capaAff1,.capaAff2,.capaAff3,.capaAff4,.capaAff5,.capaAff6 {
+	border: 1px solid;
+	width: 90%;
+	margin: 1%;
+	padding: 4px;
+}
+
+.capa1,.capa2,.capa3,.capa4,.capa5,.capa6 {
+	//float: left;
+}
+
+.capaAff1,.capaAff2,.capaAff3,.capaAff4,.capaAff5,.capaAff6, .info {
+	float: auto;
+}
+
+.link_add, .delCap {
+	text-align: right;
+	position: absolute;
+	right: 10%;
+}
+.capa1, .capaAff1 {
+	background-color: yellow;
+}
+
+.capa2, .capaAff2 {
+	background-color: #CFC;
+}
+
+.capa3, .capaAff3 {
+	background-color: orange;
+}
+
+.capa4, .capaAff4 {
+	background-color: #BBF;
+}
+
+.capa5, .capaAff5 {
+	background-color: magenta;
+}
+
+.capa6, .capaAff6 {
+	background-color: #DDD;
+}
+
+.pied {
+	/* position: fixed; */
+	bottom: 2px;
+	right: 20px;
+	font-size: 0.75em;
+	text-align: right;
+}
+
+.titre {
+	width: 85%;	
+}
+.description {
+	height: 20%;
+}
+
+span {
+	margin: 15px;
+	color: blue;
+}
+h2, h3, label {
+	margin: 15px;
+	color: #AAF;
+}
+h2 {
+	margin-top: 30px;
+}
+a {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #55c;
+	border-top:solid 2px white ; 
+	border-left:solid 2px white ;
+	border-right:solid 1px black ;
+	border-bottom:solid 1px black;	
+	text-decoration: none;
+	background-color: #bbb;
+}
+
+p {
+	margin: 30px;
+}
+body {
+	backgroud-color: #ccf;
+}
