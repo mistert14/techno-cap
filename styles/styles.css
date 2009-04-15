@@ -13,7 +13,7 @@
 	float: auto;
 }
 
-.link_add, .delCap {
+.link_add, .capDel {
 	text-align: right;
 	position: absolute;
 	right: 10%;
@@ -57,7 +57,7 @@
 	height: 20%;
 }
 
-span {
+.monspan {
 	margin: 15px;
 	color: blue;
 }
@@ -68,7 +68,7 @@ h2, h3, label {
 h2 {
 	margin-top: 30px;
 }
-a {
+.link_add, .capDel, .delCap {
 	margin-left: 15px;
 	margin-right: 15px;
 	padding-left: 4px;
