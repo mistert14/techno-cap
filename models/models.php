@@ -1,8 +1,8 @@
 <?php
 //se charge de l'acces auc donnees
 	$DB = "comp_techno";
-	$USER = "lcsmgr";
-	$PASSE = "mrt14";
+	$USER = "#USER#";
+	$PASSE = "#PASS#";
 	$HOST = "localhost";
 	
 	$cx = mysql_connect($HOST,$USER,$PASSE) or die ('Connexion base impossible !');
