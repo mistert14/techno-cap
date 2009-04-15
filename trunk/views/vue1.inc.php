@@ -1,4 +1,5 @@
 <?php
+	//require_once('../models/models.php');
 
 	if ($_POST && $_POST['choix_classe'])
 		$choix_classe = $_POST['choix_classe'];

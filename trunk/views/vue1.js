@@ -131,14 +131,5 @@ function effSeance() {
 	//alert('toto');
 }
 
-function init() {
-		Event.observe('choix_classe','change',changeClasse,true);
-		Event.observe('choix_contenu','change',changeContenu,true);
-		Event.observe('cacher','click',showHide,false);
-		Event.observe('EffaceSeance','click',effSeance,true);
-		showHide();
-		update();
 	
-}
 
-Event.observe(window,'load',init,true);
