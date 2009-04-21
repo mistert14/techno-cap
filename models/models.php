@@ -1,8 +1,8 @@
 <?php
 //se charge de l'acces auc donnees
 	$DB = "comp_techno";
-	$USER = "#USER#";
-	$PASSE = "#PASS#";
+	$USER = "lcsmgr";
+	$PASSE = "mrt14";
 	$HOST = "localhost";
 	
 	$cx = mysql_connect($HOST,$USER,$PASSE) or die ('Connexion base impossible !');
@@ -17,6 +17,7 @@
 				$liste[] = $R;
 			return $liste;
 		}
+
 
 		public function give_capa_by_id($id_capa) {
 			global $cx;
@@ -33,6 +34,26 @@
 		public function liste_contenus() {
 			global $cx;
 			$sql = "SELECT * FROM contenus where 1;";
+			$res = mysql_query($sql,$cx) or die(mysql_error($cx));
+			while ($R = mysql_fetch_object($res))
+				$liste[] = $R;
+			return $liste;
+		}
+	}
+
+
+	class CentresInteret {
+		public function listeByIdClasse($idC) {
+			global $cx;
+			$sql = "SELECT * FROM centre_interet where id_classe = '$idC';";
+			$res = mysql_query($sql,$cx) or die(mysql_error($cx));
+			while ($R = mysql_fetch_object($res))
+				$liste[] = $R;
+			return $liste;
+		}
+		public function listeById($id) {
+			global $cx;
+			$sql = "SELECT * FROM centre_interet where id = '$id';";
 			$res = mysql_query($sql,$cx) or die(mysql_error($cx));
 			while ($R = mysql_fetch_object($res))
 				$liste[] = $R;

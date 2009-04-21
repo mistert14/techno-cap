@@ -25,18 +25,3 @@ require_once '../models/models.php';
 <textarea id="DESCRIPTION" class="description" value="ENTREZ ICI UN DESCRIPTIF"></textarea>
 
 <div id="liste_capacites" class="info"></div>	
-<script type="text/javascript">
-<!--
-	tinyMCE.init({
-		mode : "textareas",
-		theme : "simple"
-	});
- 	Event.observe('choix_classe','change',changeClasse,true);
-        Event.observe('choix_contenu','change',changeContenu,true);
-        Event.observe('cacher','click',showHide,false);
-        Event.observe('EffaceSeance','click',effSeance,true);
-        showHide();
-        update();
-
--->
-</script>
