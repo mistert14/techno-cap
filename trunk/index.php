@@ -15,6 +15,7 @@
     	<script type="text/javascript" src="./lib/js/techno_cap.js" ></script>
 
 	<script type="text/javascript" src="./views/vue1.js"></script>
+	<script type="text/javascript" src="./views/vue3.js"></script>
 
 	<script type="text/javascript" src="/techno-cap/lib/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
     	
@@ -23,6 +24,7 @@
 			<ul id="mnuCapa" class="x-hidden">
 				<li><A href="#" onclick="vueAjax('vue0');">Accueil.</A></li>
 				<li><A href="#" onclick="vueAjax('vue1');">Construire sa s&#233;ance.</A></li>
+				<li><A href="#" onclick="vueAjax('vue3');">Les centres d'int&#233;r&ecirc;t propos&#233;s.</A></li>
 			</ul>
  		       <ul id="mnuTools"  class="x-hidden">
 				<li><A href="#" onclick="vueAjax('vueN');">Chercher un cours.</A></li>

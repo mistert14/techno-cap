@@ -9,6 +9,40 @@
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
+
+CREATE TABLE IF NOT EXISTS `centre_interet` (
+  `id` int(11) NOT NULL auto_increment,
+  `id_classe` int(11) NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `question` varchar(255) NOT NULL,
+  `nb_seance` varchar(25) NOT NULL,
+  `liste_capa` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+
+
+INSERT INTO `centre_interet` (`id`, `id_classe`, `titre`, `question`, `nb_seance`, `liste_capa`) VALUES
+(1, 1, 'D&#233;couverte de l&apos;objet technique', 'A quel besoin r&#233;pond un objet technique', '3s', '1:2:4:21:25'),
+(2, 1, 'Structure g&#233;n&#233;rale de l&apos;objet technique', 'Un objet technique, de quoi est-il constitu&#233;', '4s', '7:8:15:31'),
+(3, 1, 'Fonctions &#233;l&#233;mentaires d&apos;un objet technique', 'Un objet technique comment fonctionne t&apos;il', '2x3s', '9:11:12:16:29:30:31'),
+(4, 1, 'Des solutions techniques pour une même fonction', 'Pourquoi existe t&apos;il tant de solutions diff&#233;rentes pour r&#233;pondre &#224; des besoins identiques', '4s', '10:16:17:18:22:23:26:32:34:38'),
+(5, 1, 'R&#233;alisation d&apos;un objet technique', 'Un objet technique je le r&#233;alise comment', '3x3s', '19:18:37:41:42:39:43:44:45:40'),
+(6, 1, 'Les carcat&#233;ristiques d&apos;un objet technique', 'Cet objet technique pourquoi me convient-il', '4s', '3:5:6:14:20:24:27:36'),
+(7, 2, 'L''environnement construit du collège', 'Comment est construit l''environnement du collège', '4s', '46:62:70:71:72:75'),
+(8, 2, 'Des fonctions assurées par les ouvrages aux solutions techniques', 'Quelles sont les particularités des ouvrages de notre environnement', '4s', '47:48:51:52:53:73:74:79'),
+(9, 2, 'Stabilité d''une structure', 'Pourquoi un ouvrage ne s''effondre t&apos;il pas', '7s', '49:54:56:57:59:61:78:85'),
+(10, 2, 'R&#233;alisation d&apos;une maquette structurelle', 'Comment franchir un obstacle par une voie de passage ou de circulation', '9s', '48:54:49:56:57:61:60:59:80:81:78:82:86:89:83:84:90'),
+(11, 2, 'Organisation fonctionnelle', 'Comment est structur&#233;e une unit&#233; d&apos;habitation', '4s', '46:49:51:52:50:60:66:65:68:67:69:77'),
+(12, 2, 'Agencement, am&#233;nagement', 'Comment agencer un espace', '7s', '46:57:58:50:51:56:52:65:66:68:67:69:77:87:88'),
+(13, 3, 'Histoire et g&#233;ographie des solutions techniques', 'Comment le contexte historique influt-il sur la conception', '2s', '95:108:109:110'),
+(14, 3, 'Prise en compte des contraintes dans la conception', 'Comment les contraintes sont-elles prises en compte dans la conception d&apos;un objet technique', '2s', '94:95:96:101:104'),
+(15, 3, 'Source d&apos;&#233;nergie, conversion d&apos;&#233;nergie', 'Quelle est la source d&apos;&#233;nergie ext&#233;rieure utilis&#233;e par l&apos;objet technique et quel est l&apos;&#233;l&#233;ment qui permet de la convertir', '3s', '92:93:102:105:106:112'),
+(16, 3, 'Transmission et/ou conversion de l&apos;&#233;nergie', 'Par quoi et comment est transmise et/ou transform&#233;e l&apos;&#233;nergie dans un objet technique', '4s', '91:92:93:99:98:103:105:106:111:112'),
+(17, 3, 'Acquisition et transmission de l&apos;information', 'Par quoi et comment est sont r&#233;alis&#233;es l&apos;acquisition et la transmission de l&apos;information', '4s', '91:92:93:102:113:114:118:120'),
+(18, 3, 'R&#233;gulation du milieu ambiant', 'Par quoi et comment est r&#233;gul&#233;e l&apos;&#233;nergie pour am&#233;liorer le confort de l&apos;utilisateur', '2s', '91:92:93:102:103:105:106:107:111:112:113'),
+(19, 3, 'Commande ou pilotage', 'Par quoi et comment est command&#233;e un objet technique', '4s', '91:92:93:102:111:112:115:116:117'),
+(20, 3, 'Conception et r&#233;alisation d&apos;un syst&#232;me automatique', 'Comment g&#233;rer un projet de conception et la r&#233;alisation d&apos;un syst&#232;me automatis&#233;', '6s', '94:95:96:97:99:100:103:121:122:123:124:125:126:127:128');
+
 --
 -- Base de donn�es: `comp_techno`
 --
