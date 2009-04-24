@@ -14,14 +14,8 @@ require_once '../models/models.php';
 
 <br />
 <br />
-<h3>Structure de la s&eacute;ance:</h3>  
+<h3>Liste des capacit&eacute;s</h3>  
 <span><A href="#" id="EffaceSeance">Effacer les capacit&eacute;s</A></span>
 	<span id="span_PDF"  title ="T&eacute;l&eacutecharger la s&eacute;ance au format PDF."><A id="PDF" href="#">T&eacute;l&eacute;charger un fichier PDF</A></span>
-<br />
-<label for="TITRE">TITRE:</label>
-<input id="TITRE" class="titre" value="ENTREZ ICI LE TITRE"></input>
-<br />
-<label for="DESCRIPTION">DESCRIPTION:</label>
-<textarea id="DESCRIPTION" class="description" value="ENTREZ ICI UN DESCRIPTIF"></textarea>
 
 <div id="liste_capacites" class="info"></div>	

@@ -4,7 +4,7 @@ Ext.onReady(function(){
     var tabSearch = new Ext.Panel(
     {
     	frame:true,
-    	title: 'Capacit&#233;s',
+    	title: 'Ressources officielles',
     	collapsible:true,
     	contentEl:'mnuCapa',
     	titleCollapse: true
@@ -13,7 +13,7 @@ Ext.onReady(function(){
     var tabListe = new Ext.Panel(
     {
     	frame:true,
-    	title: 'Outils',
+    	title: 'Outil collaboratif',
     	collapsible:true,
     	contentEl:'mnuTools',
     	deferredRender:false,
