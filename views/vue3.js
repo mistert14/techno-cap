@@ -15,7 +15,7 @@ function update_vue3() {
 		var params = 'update_ajax=1&choix_ci='+choixCI;
 
 		new Ajax.Updater('capa_vue3',url,{ method: 'post', parameters: params, onComplete: function(requester) {
-			//Element.hide('capa_vue3');
+			return true;
 		}});
 	
 }

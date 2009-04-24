@@ -12,5 +12,5 @@ require_once '../models/models.php';
 <span id="div_classes"><?php echo giveClasses(); ?></span>
 <span id="div_centres_interet"><?php echo giveCentresInteret(1); ?></span>
 </div>
-<div id="capa_vue3">toto</div>
+<div id="capa_vue3"><p>...</p></div>
 

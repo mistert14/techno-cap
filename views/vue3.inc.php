@@ -3,7 +3,7 @@
 	//moulinage Ajax ICI
  	function giveClasses() {
                 $c = new Classes();
-                $flux = "<select id =\"choix_classe_vue3\" name=\"choix_classe_vue3\" onchange=\"javascript:changeClasseVue3();\" >";
+                $flux = "<select id =\"choix_classe_vue3\" name=\"choix_classe_vue3\" >";
                 foreach($c->liste_classes() as $cl)
                         $flux .= "<option value=\"$cl->id\">$cl->classe</option>";
                 $flux .="</select>";
